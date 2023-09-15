@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Validando Formulario</title>
+</head>
+<body>
+    
+    <header class="container">
+        <section>
+            <h1>Formulario de Cadastro</h1>
+            <ul>
+                <li>Nenhum campo pode estar vazio</li>
+                <li>Usuario so pode conter letras e/ou numeros</li>
+                <li>Usuario devera ter entre 3 e 12 caracteres</li>
+                <li>Senha precisa entre 6 e 12 caracteres</li>
+            </ul>
+        </section>
+
+        <section>
+            <form action="/" method="post" class="formulario">
+                <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Insira seu nome" class="nome validandoPermissoes" >
+                <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="sobr" placeholder="Sobrenome" class="sobrenome validandoPermissoes" >
+                <label for="num">Usuario:</label>
+                    <input type="text" name="usu" id="usu" placeholder="Insira um Usuario" class="usuario validandoPermissoes">
+                <label for="pass">Senha:</label>
+                    <input type="password" name="password" id="pass" placeholder="senha" class="senha validandoPermissoes" >
+                <label for="passRepeat">Repita a Senha:</label>
+                    <input type="password" name="passRepeat" id="passRepeat" placeholder="Repita senha" class="repetirSenha validandoPermissoes" >
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </header>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
